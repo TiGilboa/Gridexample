@@ -1,18 +1,14 @@
 html {
   background-color: #d6cfcf;
 }
-
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-
-body{
+body {
   background: #ffffff;
   font-family: 'Open Sans', sans-serif;
 }
-
 .search {
   width: 100%;
 }
-
 .searchTerm {
   float: left;
   width: 100%;
@@ -23,11 +19,9 @@ body{
   outline: none;
   color: #9DBFAF;
 }
-
-.searchTerm:focus{
+.searchTerm:focus {
   color: #00B4CC;
 }
-
 .searchButton {
   right: -50px;
   width: 40px;
@@ -42,53 +36,47 @@ body{
 }
 
 /*Resize the wrap to see the search bar change!*/
-.wrap{
+
+
+.wrap {
   width: 30%;
   top: 50%;
   left: 50%;
-
 }
-
 .button-description {
- margin-top: 30px;
- }
-
- .hook-1 {
-    font-size: 400%;
-    font-family: 'Open Sans', sans-serif;
-    margin-bottom: 30px;
-  }
-
-  .hook-2 {
-     font-size: 400%;
-     font-family: 'Open Sans', sans-serif;
-     margin-bottom: 30px;
-   }
+  margin-top: 30px;
+}
+.hook-1 {
+  font-size: 400%;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 30px;
+}
+.hook-2 {
+  font-size: 400%;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 30px;
+}
 
 }
 .description {
   font-style: italic;
   font-family: 'Open Sans', sans-serif;
 }
-
 .title-header2 {
   font-size: 200%;
   font-family: 'Open Sans', sans-serif;
   margin-bottom: 30px;
 }
-
 .paragraph-2 {
   font-size: 115%;
   font-style: italic;
   font-family: 'Open Sans', sans-serif;
 }
-
 .remember {
   font-style: bold;
   font-family: 'Open Sans', sans-serif;
   font-size: 50
 }
-
 #button {
   font-size: 50;
   font-weight: bolder;
@@ -96,31 +84,26 @@ body{
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.child-a{
-  grid-area: nav;
-  background-color: #ffffff;;
-  align-items: flex-end; right: auto;
-  padding-left: 100px;
-  padding-right: 100px;
+
+.flex-container {
+  grid-area: header;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.child-a {
+  background-color: #ffffff;
   font-family: 'Open Sans', sans-serif;
 }
-.child-ab{
-  grid-area: name;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+.child-ab {
   font-family: 'Open Sans', sans-serif;
   img {
-display: inline-block;
-margin-left: 5px;
-height: 50%auto;
-width: 50%auto;
-border-radius: 100%;
-border: 2px solid black
+    display: inline-block;
+    height: 50%auto;
+    width: 50%auto;
+    border: 2px solid black
+  }
 }
-}
-.child-abc1{
+.child-abc1 {
   grid-area: image1;
   background-color: #EF4136;
   font-size: 300;
@@ -131,8 +114,7 @@ border: 2px solid black
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
-.child-abc2{
+.child-abc2 {
   grid-area: image2;
   background-color: #EF4136;
   font-size: 300;
@@ -143,32 +125,35 @@ border: 2px solid black
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.child-b{
+.child-b {
   grid-area: main;
-  background-color: #ffffff;;
+  background-color: #ffffff;
+  ;
   padding-left: 100px;
   padding-right: 100px;
 }
-.child-c{
+.child-c {
   grid-area: sidebar;
-  background-color: #ffffff;;
+  background-color: #ffffff;
+  ;
   padding-left: 100px;
   padding-right: 100px;
 }
-.child-cd{
+.child-cd {
   grid-area: blog;
-  background-color: #ffffff;;
+  background-color: #ffffff;
+  ;
   padding-left: 100px;
   padding-right: 100px;
 }
-.child-d{
+.child-d {
   grid-area: footer;
-  background-color: #ffffff;;
+  background-color: #ffffff;
+  ;
   padding-left: 100px;
   padding-right: 100px;
 }
-
-.container{
+.container {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: 20% 20% 20% 20%;
@@ -179,10 +164,10 @@ border: 2px solid black
   padding-left: 10px;
   padding-right: 10px;
   grid-template-areas:
-    "name name nav nav"
-    "image1 image1 image2 image2"
-    "main main main main"
-    "sidebar sidebar sidebar sidebar"
-    "blog blog blog blog"
-    "footer footer footer footer"
+  "header header header header"
+  "image1 image1 image2 image2"
+  "main main main main"
+  "sidebar sidebar sidebar sidebar"
+  "blog blog blog blog"
+  "footer footer footer footer"
 }
