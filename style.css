@@ -16,10 +16,25 @@ img {
     margin-right: 10px;
 }
 
-
 #nav {
   background-color: #ffffff;
   color: gray;
+  opacity: 0.5;
+  overflow: hidden;
+  float: left;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  padding-bottom: 30px;
+
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+
 }
 
 .wrap {
@@ -38,11 +53,14 @@ justify-content: flex-end;
 .bigbranding {
   font-size: 400%;
   font-family: 'Open Sans', sans-serif;
+  padding-top: 80px;
+  z-index:-30px;
 
 }
 .hook-2 {
   font-size: 400%;
   font-family: 'Open Sans', sans-serif;
+  z-index:-30px;
 }
 
 .smallbranding{
@@ -87,10 +105,7 @@ justify-content: flex-end;
 .flex-container {
   grid-area: header;
 }
-.child-a {
-  background-color: #ffffff;
-  font-family: 'Open Sans', sans-serif;
-  width: auto;
+
 }
 .child-ab {
   font-family: 'Open Sans', sans-serif;
@@ -106,31 +121,13 @@ justify-content: flex-end;
 .background-red{
   background-color: #EF4136;
 }
-/*
-.child-abc1 {
-  grid-area: image1;
-  background-color: #ffffff;
-  font-size: 300;
-  font-weight: bolder;
-  font-family: 'Open Sans', sans-serif;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+
+.bigcard {
+  position: static;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: red;
 }
-
-
-.child-abc2 {
-  grid-area: image2;
-  background-color: #ffffff;
-  font-size: 300;
-  font-weight: bolder;
-  font-family: 'Open Sans', sans-serif;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}*/
 .child-b {
   grid-area: main;
   background-color: #ffffff;
